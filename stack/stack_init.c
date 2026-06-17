@@ -1,34 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.h                                        :+:      :+:    :+:   */
+/*   stack_init.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/17 16:23:39 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/17 17:34:53 by ynascime         ###   ########.fr       */
+/*   Created: 2026/06/17 16:58:49 by ynascime          #+#    #+#             */
+/*   Updated: 2026/06/17 17:33:48 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP_H
-# define PUSH_SWAP_H
-#include <stddef.h>
+#include "../push_swap.h"
 
-typedef struct s_node
+void stack_init(t_stack *stack)   
 {
-	int				content;
-	int				index;
-	struct s_node	*next;
-	struct s_node	*prev;
-}	t_node;
-
-typedef struct s_stack
-{
-	int				size;
-	t_node			*top;
-	t_node 			*bottom;
-}	t_stack;
-
-void	stack_init(t_stack *stack);
-
-#endif
+	stack->size = 0;
+	stack->top = NULL;
+	stack->bottom = NULL;
+}
