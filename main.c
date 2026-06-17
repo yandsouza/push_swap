@@ -1,32 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.h                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/17 16:23:39 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/17 16:53:28 by ynascime         ###   ########.fr       */
+/*   Created: 2026/06/17 16:54:53 by ynascime          #+#    #+#             */
+/*   Updated: 2026/06/17 16:55:25 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP_H
-# define PUSH_SWAP_H
-
-typedef struct s_node
+int main(int c, char **argv)
 {
-	int				*content;
-	int				*index;
-	struct s_node	*next;
-	struct s_node	*prev;
-}	t_node;
-
-typedef struct s_stack
-{
-	int				*content;
-	int				*size;
-	struct s_node	*top;
-	struct s_node	*bottom;
-}	t_stack;
-
-#endif
+}
