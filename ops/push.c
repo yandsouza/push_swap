@@ -6,7 +6,7 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/18 00:14:14 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/18 18:17:28 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/18 18:24:09 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	push(t_stack *stack_one, t_stack *stack_two)
 {
-	t_node *node;
+	t_node	*node;
 
 	node = stack_one->top;
 	if (stack_two->size == 0)
