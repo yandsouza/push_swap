@@ -1,36 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.h                                        :+:      :+:    :+:   */
+/*   node_add.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/17 16:23:39 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/17 22:44:56 by ynascime         ###   ########.fr       */
+/*   Created: 2026/06/17 22:29:05 by ynascime          #+#    #+#             */
+/*   Updated: 2026/06/17 22:33:40 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP_H
-# define PUSH_SWAP_H
-#include <stdlib.h>
+#include "../push_swap.h"
 
-typedef struct s_node
+t_node *node_add(int content)
 {
-	int				content;
-	int				index;
-	struct s_node	*next;
-	struct s_node	*prev;
-}	t_node;
-
-typedef struct s_stack
-{
-	int				size;
-	t_node			*top;
-	t_node 			*bottom;
-}	t_stack;
-
-void	stack_init(t_stack *stack);
-void	push_stack(t_stack *stack, int content);
-t_node *node_add(int content);
-
-#endif
+	t_node *new;
+	
+	new = malloc(sizeof(t_node));
+	if (!new)
+		return (NULL);
+	new->content = content;
+	new->index = 0;
+	new->next = NULL;
+	new->prev = NULL;
+	return (new);
+}

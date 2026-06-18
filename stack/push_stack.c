@@ -1,36 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.h                                        :+:      :+:    :+:   */
+/*   push_stack.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/17 16:23:39 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/17 22:44:56 by ynascime         ###   ########.fr       */
+/*   Created: 2026/06/17 22:27:40 by ynascime          #+#    #+#             */
+/*   Updated: 2026/06/17 22:46:45 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP_H
-# define PUSH_SWAP_H
-#include <stdlib.h>
+#include "../push_swap.h"
 
-typedef struct s_node
+void push_stack(t_stack *stack, int content)
 {
-	int				content;
-	int				index;
-	struct s_node	*next;
-	struct s_node	*prev;
-}	t_node;
+	t_node *new;
 
-typedef struct s_stack
-{
-	int				size;
-	t_node			*top;
-	t_node 			*bottom;
-}	t_stack;
-
-void	stack_init(t_stack *stack);
-void	push_stack(t_stack *stack, int content);
-t_node *node_add(int content);
-
-#endif
+	new = node_add(content);
+	if (!new)
+		return ;
+	if (stack->size == 0)
+	{
+		stack->top = new;
+		stack->bottom = new;
+	}
+	else
+	{
+		new->prev = stack->bottom;
+		stack->bottom->next = new;
+		stack->bottom = new;
+	}
+	stack->size++;
+}
