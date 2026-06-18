@@ -6,13 +6,13 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 16:58:49 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/17 17:33:48 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/18 00:20:21 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void stack_init(t_stack *stack)   
+void	stack_init(t_stack *stack)
 {
 	stack->size = 0;
 	stack->top = NULL;

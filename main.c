@@ -6,7 +6,7 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 16:54:53 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/17 23:34:50 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/18 00:18:13 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@ void	print_stack(t_stack *stack)
 	}
 }
 
-int main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
-	t_stack stack_a;
-	t_stack stack_b;
-	int i;
+	t_stack	stack_a;
+	t_stack	stack_b;
+	int		i;
 
 	if (argc == 1)
 		return (0);

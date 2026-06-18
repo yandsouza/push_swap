@@ -6,16 +6,16 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 22:29:05 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/17 22:33:40 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/18 00:22:39 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-t_node *node_add(int content)
+t_node	*node_add(int content)
 {
-	t_node *new;
-	
+	t_node	*new;
+
 	new = malloc(sizeof(t_node));
 	if (!new)
 		return (NULL);

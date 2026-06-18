@@ -6,15 +6,15 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 22:27:40 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/17 22:46:45 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/18 00:21:58 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void push_stack(t_stack *stack, int content)
+void	push_stack(t_stack *stack, int content)
 {
-	t_node *new;
+	t_node	*new;
 
 	new = node_add(content);
 	if (!new)

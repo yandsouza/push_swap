@@ -6,13 +6,13 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 16:23:39 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/17 22:44:56 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/18 00:19:24 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
-#include <stdlib.h>
+# include <stdlib.h>
 
 typedef struct s_node
 {
@@ -24,13 +24,13 @@ typedef struct s_node
 
 typedef struct s_stack
 {
-	int				size;
-	t_node			*top;
-	t_node 			*bottom;
+	int		size;
+	t_node	*top;
+	t_node	*bottom;
 }	t_stack;
 
 void	stack_init(t_stack *stack);
 void	push_stack(t_stack *stack, int content);
-t_node *node_add(int content);
+t_node	*node_add(int content);
 
 #endif
