@@ -6,7 +6,7 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 16:54:53 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/18 18:09:03 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/18 22:05:04 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int	main(int argc, char **argv)
 	i = 1;
 	while (i < argc)
 	{
-		push_stack(&stack_a, atoi(argv[i]));
+		push_stack(&stack_a, ft_atoi(argv[i]));
 		i++;
 	}
 	printf("Stack a:\n");
@@ -50,22 +50,16 @@ int	main(int argc, char **argv)
 	printf("Stack b:\n");
 	print_stack(&stack_b);
 	printf("-------------------\n");
-	push(&stack_a, &stack_b);
-	printf("Stack a after push:\n");
-	print_stack(&stack_a);
-	printf("Stack b after push:\n");
-	print_stack(&stack_b);
-	printf("-------------------\n");
-	push(&stack_a, &stack_b);
-	printf("Stack a after push:\n");
-	print_stack(&stack_a);
-	printf("Stack b after push:\n");
-	print_stack(&stack_b);
-	printf("-------------------\n");
-	push(&stack_a, &stack_b);
-	printf("Stack a after push:\n");
-	print_stack(&stack_a);
-	printf("Stack b after push:\n");
-	print_stack(&stack_b);
+	i = 1;
+	while (i < argc)
+	{
+		push(&stack_a, &stack_b);
+		printf("Stack a after push:\n");
+		print_stack(&stack_a);
+		printf("Stack b after push:\n");
+		print_stack(&stack_b);
+		printf("-------------------\n");
+		i++;
+	}
 	return (0);
 }
