@@ -6,7 +6,7 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 16:23:39 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/18 15:49:04 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/20 15:28:51 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,6 @@ void	push_stack(t_stack *stack, int content);
 t_node	*node_add(int content);
 
 void	push(t_stack *stack_one, t_stack *stack_two);
+void	rotate(t_stack *stack);
 
 #endif

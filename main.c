@@ -6,11 +6,12 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 16:54:53 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/18 22:05:04 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/20 15:55:45 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+#include "libft/libft.h"
 #include <stdio.h>
 
 void	print_stack(t_stack *stack)
@@ -50,6 +51,10 @@ int	main(int argc, char **argv)
 	printf("Stack b:\n");
 	print_stack(&stack_b);
 	printf("-------------------\n");
+	rotate(&stack_a);
+	printf("Stack a after rotate:\n");
+	print_stack(&stack_a);
+	printf("-------------------\n");
 	i = 1;
 	while (i < argc)
 	{
@@ -61,5 +66,9 @@ int	main(int argc, char **argv)
 		printf("-------------------\n");
 		i++;
 	}
+	rotate(&stack_b);
+	printf("Stack b after rotate:\n");
+	print_stack(&stack_b);
+	printf("-------------------\n");
 	return (0);
 }
