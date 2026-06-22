@@ -6,7 +6,7 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 16:23:39 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/22 16:44:30 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/22 17:01:41 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	stack_init(t_stack *stack);
 void	push_stack(t_stack *stack, int content);
 t_node	*node_add(int content);
 
-void indexer(t_stack *stack_one);
+void	indexer(t_stack *stack_one);
 
 void	push(t_stack *stack_one, t_stack *stack_two);
 void	rotate(t_stack *stack);

@@ -6,20 +6,20 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/22 15:56:26 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/22 16:56:27 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/22 17:03:53 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void indexer(t_stack *stack_one)
+void	indexer(t_stack *stack_one)
 {
-	int index;
-	t_node *node_one;
-	t_node *node_two;
+	int		index;
+	t_node	*node_one;
+	t_node	*node_two;
 
 	node_one = stack_one->top;
-	while(node_one)
+	while (node_one)
 	{
 		node_two = stack_one->top;
 		index = 0;

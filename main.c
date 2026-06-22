@@ -6,7 +6,7 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 16:54:53 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/22 16:55:33 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/22 17:00:30 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	print_stack(t_stack *stack)
 		printf("content: %d | index: %d\n", node->content, node->index);
 		node = node->next;
 	}
-		printf("stack size: %d\n", stack->size);
+	printf("stack size: %d\n", stack->size);
 }
 
 int	main(int argc, char **argv)
