@@ -6,7 +6,7 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 16:54:53 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/20 15:55:45 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/22 16:55:33 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ int	main(int argc, char **argv)
 		push_stack(&stack_a, ft_atoi(argv[i]));
 		i++;
 	}
+	indexer(&stack_a);
 	printf("Stack a:\n");
 	print_stack(&stack_a);
 	printf("Stack b:\n");
