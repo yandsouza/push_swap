@@ -6,7 +6,7 @@
 #    By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/06/23 14:29:32 by ynascime          #+#    #+#              #
-#    Updated: 2026/06/23 15:02:35 by ynascime         ###   ########.fr        #
+#    Updated: 2026/06/23 16:34:28 by ynascime         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ SRCS		=	main.c \
 
 OBJS		= $(SRCS:%.c=%.o)
 CC			= cc
-CFLAGS		= -Wall -Wextra -Werror -I include -I $(LIBFT_DIR)
+CFLAGS		= -g -Wall -Wextra -Werror -I include -I $(LIBFT_DIR)
 HEADER		= include/push_swap.h
 LIBFT_DIR	= ./libft
 LIBFT		= $(LIBFT_DIR)/libft.a
