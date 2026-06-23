@@ -6,11 +6,11 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/20 15:21:44 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/20 15:51:14 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/23 15:05:53 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "push_swap.h"
 
 void	rotate(t_stack *stack)
 {

@@ -6,11 +6,11 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/18 00:14:14 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/18 21:40:32 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/23 15:05:44 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "push_swap.h"
 
 void	push(t_stack *stack_one, t_stack *stack_two)
 {
@@ -33,4 +33,10 @@ void	push(t_stack *stack_one, t_stack *stack_two)
 		stack_two->top->prev = node;
 	stack_two->top = node;
 	stack_two->size++;
+}
+
+void	pa(t_stack *stack_a, t_stack *stack_b)
+{
+	push(stack_a, stack_b);
+	write(1, "pa\n", 3);
 }

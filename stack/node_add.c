@@ -6,11 +6,11 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 22:29:05 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/18 00:22:39 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/23 15:06:04 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "push_swap.h"
 
 t_node	*node_add(int content)
 {

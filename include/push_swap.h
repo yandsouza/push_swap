@@ -6,13 +6,14 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 16:23:39 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/22 17:01:41 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/23 15:04:34 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 # include <stdlib.h>
+# include <unistd.h>
 
 typedef struct s_node
 {
@@ -37,5 +38,7 @@ void	indexer(t_stack *stack_one);
 
 void	push(t_stack *stack_one, t_stack *stack_two);
 void	rotate(t_stack *stack);
+
+void	pa(t_stack *stack_a, t_stack *stack_b);
 
 #endif

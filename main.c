@@ -6,7 +6,7 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 16:54:53 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/22 17:00:30 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/22 19:36:31 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,7 @@ int	main(int argc, char **argv)
 	print_stack(&stack_a);
 	printf("-------------------\n");
 	i = 1;
+	pa(&stack_a, &stack_b);
 	while (i < argc)
 	{
 		push(&stack_a, &stack_b);
