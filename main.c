@@ -6,7 +6,7 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 16:54:53 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/23 16:51:14 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/23 18:38:37 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,10 @@ int	main(int argc, char **argv)
 //	}
 	rotate(&stack_a);
 	printf("Stack a after rotate:\n");
+	print_stack(&stack_a);
+	printf("-------------------\n");
+	reverse(&stack_a);
+	printf("Stack a after reverse:\n");
 	print_stack(&stack_a);
 	printf("-------------------\n");
 	return (0);

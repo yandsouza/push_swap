@@ -6,7 +6,7 @@
 #    By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/06/23 14:29:32 by ynascime          #+#    #+#              #
-#    Updated: 2026/06/23 16:34:28 by ynascime         ###   ########.fr        #
+#    Updated: 2026/06/23 17:40:17 by ynascime         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ SRCS		=	main.c \
 				stack/push_stack.c \
 				ops/push.c \
 				ops/rotate.c \
+				ops/reverse.c \
 
 OBJS		= $(SRCS:%.c=%.o)
 CC			= cc
