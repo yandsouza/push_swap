@@ -6,7 +6,7 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 16:23:39 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/25 16:34:33 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/25 17:04:03 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,16 @@ void	push(t_stack *stack_one, t_stack *stack_two);
 void	rotate(t_stack *stack);
 void	reverse(t_stack *stack);
 
+void	sa(t_stack *stack_a);
+void	sb(t_stack *stack_b);
+void	ss(t_stack *stack_a, t_stack *stack_b);
 void	pa(t_stack *stack_a, t_stack *stack_b);
 void	pb(t_stack *stack_a, t_stack *stack_b);
+void	ra(t_stack *stack_a);
+void	rb(t_stack *stack_b);
+void	rr(t_stack *stack_a, t_stack *stack_b);
+void	rra(t_stack *stack_a);
+void	rrb(t_stack *stack_b);
+void	rrr(t_stack *stack_a, t_stack *stack_b);
 
 #endif
