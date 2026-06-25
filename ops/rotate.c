@@ -6,7 +6,7 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/20 15:21:44 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/25 01:44:38 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/25 17:12:07 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,23 @@ void    rotate(t_stack *stack)
     stack->bottom->next = node;
     node->next = NULL;
     stack->bottom = node;
+}
+
+void	ra(t_stack *stack_a)
+{
+	rotate(stack_a);
+	write(1, "ra\n", 3);
+}
+
+void	rb(t_stack *stack_b)
+{
+	rotate(stack_b);
+	write(1, "rb\n", 3);
+}
+
+void	rr(t_stack *stack_a, t_stack *stack_b)
+{
+	rotate(stack_a);
+	rotate(stack_b);
+	write(1, "rr\n", 3);
 }

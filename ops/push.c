@@ -6,7 +6,7 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/18 00:14:14 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/25 16:29:55 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/25 17:17:39 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	push(t_stack *stack_one, t_stack *stack_two)
 	stack_two->size++;
 }
 
-void	pa(t_stack *stack_a, t_stack *stack_b)
+void	pa(t_stack *stack_b, t_stack *stack_a)
 {
 	push(stack_b, stack_a);
 	write(1, "pa\n", 3);

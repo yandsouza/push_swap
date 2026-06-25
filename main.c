@@ -6,7 +6,7 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 16:54:53 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/25 16:43:50 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/25 17:20:01 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,27 @@ int	main(int argc, char **argv)
 	printf("Stack a:\n");
 	print_stack(&stack_a);
 	printf("-------------------\n");
+	printf("Stack b:\n");
+	print_stack(&stack_b);
+	printf("-------------------\n");
+
+	sa(&stack_a);	
+	pb(&stack_a, &stack_b);
+	pb(&stack_a, &stack_b);
+	pb(&stack_a, &stack_b);
+	rr(&stack_a, &stack_b);
+	rrr(&stack_a, &stack_b);
+	sa(&stack_a);	
+	pa(&stack_b, &stack_a);
+	pa(&stack_b, &stack_a);
+	pa(&stack_b, &stack_a);
+
+	printf("Stack a ordered:\n");
+	print_stack(&stack_a);
+	printf("-------------------\n");
+	printf("Stack b:\n");
+	print_stack(&stack_b);
+	printf("-------------------\n");
 //	printf("Stack b:\n");
 //	print_stack(&stack_b);
 //	printf("-------------------\n");
@@ -64,10 +85,10 @@ int	main(int argc, char **argv)
 //		printf("-------------------\n");
 //		i++;
 //	}
-	swap(&stack_a);
-	printf("Stack a after swap:\n");
-	print_stack(&stack_a);
-	printf("-------------------\n");
+//	swap(&stack_a);
+//	printf("Stack a after swap:\n");
+//	print_stack(&stack_a);
+//	printf("-------------------\n");
 //	rotate(&stack_a);
 //	printf("Stack a after rotate:\n");
 //	print_stack(&stack_a);
