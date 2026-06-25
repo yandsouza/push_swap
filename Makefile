@@ -6,13 +6,13 @@
 #    By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/06/23 14:29:32 by ynascime          #+#    #+#              #
-#    Updated: 2026/06/25 16:36:13 by ynascime         ###   ########.fr        #
+#    Updated: 2026/06/25 17:54:10 by ynascime         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		=	push_swap
 SRCS		=	main.c \
-				indexer.c \
+				stack/indexer.c \
 				stack/node_add.c \
 				stack/stack_init.c \
 				stack/push_stack.c \
