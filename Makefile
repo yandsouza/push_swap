@@ -6,7 +6,7 @@
 #    By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/06/23 14:29:32 by ynascime          #+#    #+#              #
-#    Updated: 2026/06/23 17:40:17 by ynascime         ###   ########.fr        #
+#    Updated: 2026/06/25 16:36:13 by ynascime         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,6 +16,7 @@ SRCS		=	main.c \
 				stack/node_add.c \
 				stack/stack_init.c \
 				stack/push_stack.c \
+				ops/swap.c \
 				ops/push.c \
 				ops/rotate.c \
 				ops/reverse.c \

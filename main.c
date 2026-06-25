@@ -6,7 +6,7 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 16:54:53 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/23 18:38:37 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/25 16:43:50 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,10 +49,11 @@ int	main(int argc, char **argv)
 	indexer(&stack_a);
 	printf("Stack a:\n");
 	print_stack(&stack_a);
-	printf("Stack b:\n");
-	print_stack(&stack_b);
 	printf("-------------------\n");
-	i = 1;
+//	printf("Stack b:\n");
+//	print_stack(&stack_b);
+//	printf("-------------------\n");
+//	i = 1;
 //	while (i < argc)
 //	{
 //		push(&stack_a, &stack_b);
@@ -63,13 +64,17 @@ int	main(int argc, char **argv)
 //		printf("-------------------\n");
 //		i++;
 //	}
-	rotate(&stack_a);
-	printf("Stack a after rotate:\n");
+	swap(&stack_a);
+	printf("Stack a after swap:\n");
 	print_stack(&stack_a);
 	printf("-------------------\n");
-	reverse(&stack_a);
-	printf("Stack a after reverse:\n");
-	print_stack(&stack_a);
-	printf("-------------------\n");
+//	rotate(&stack_a);
+//	printf("Stack a after rotate:\n");
+//	print_stack(&stack_a);
+//	printf("-------------------\n");
+//	reverse(&stack_a);
+//	printf("Stack a after reverse:\n");
+//	print_stack(&stack_a);
+//	printf("-------------------\n");
 	return (0);
 }
