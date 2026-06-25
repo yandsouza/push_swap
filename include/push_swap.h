@@ -6,7 +6,7 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 16:23:39 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/25 17:04:03 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/25 18:09:59 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ void	push_stack(t_stack *stack, int content);
 t_node	*node_add(int content);
 
 void	indexer(t_stack *stack_one);
+int		verify_duplicate(t_stack *stack_one);
 
 void	swap(t_stack *stack);
 void	push(t_stack *stack_one, t_stack *stack_two);
