@@ -6,7 +6,7 @@
 #    By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/06/23 14:29:32 by ynascime          #+#    #+#              #
-#    Updated: 2026/06/25 18:08:27 by ynascime         ###   ########.fr        #
+#    Updated: 2026/06/26 18:35:47 by ynascime         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,7 @@ SRCS		=	main.c \
 				stack/stack_init.c \
 				stack/push_stack.c \
 				parser/verify_duplicate.c \
+				parser/compute_disorder.c \
 				ops/swap.c \
 				ops/push.c \
 				ops/rotate.c \
