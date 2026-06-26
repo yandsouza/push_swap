@@ -6,7 +6,7 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/23 17:36:35 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/25 16:57:26 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/26 17:07:12 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void    reverse(t_stack *stack)
 {
     t_node  *node;
 
-    if (!stack)
+    if (!stack || stack->size < 2)
         return ;
     node = stack->bottom;
     stack->bottom = node->prev;

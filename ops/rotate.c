@@ -6,7 +6,7 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/20 15:21:44 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/25 17:12:07 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/26 17:05:29 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void    rotate(t_stack *stack)
 {
     t_node  *node;
 
-    if (!stack)
+    if (!stack || stack->size < 2)
         return ;
     node = stack->top;
     stack->top = node->next;
