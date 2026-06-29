@@ -8,14 +8,14 @@ int return_index(t_stack *stack_a)
     int     i;
 
     current = stack_a->top; 
-    min = current->content;
+    min = current->index;
     index = 0;
     i = 0;
     while(current != NULL)
     {
-        if (current->content < min)
+        if (current->index < min)
         {
-            min = current->content;
+            min = current->index;
             index = i;
         }
         i++;
