@@ -6,7 +6,7 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 16:54:53 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/26 18:54:59 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/29 16:53:54 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,9 +71,10 @@ int	main(int argc, char **argv)
 //	pa(&stack_b, &stack_a);
 //	pa(&stack_b, &stack_a);
 //
-//	printf("Stack a ordered:\n");
-//	print_stack(&stack_a);
-//	printf("-------------------\n");
+	selection_sort(&stack_a, &stack_b);
+	printf("Stack a ordered:\n");
+	print_stack(&stack_a);
+	printf("-------------------\n");
 //	printf("Stack b:\n");
 //	print_stack(&stack_b);
 //	printf("-------------------\n");

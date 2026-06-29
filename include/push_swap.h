@@ -6,7 +6,7 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 16:23:39 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/26 18:51:51 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/29 16:55:06 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,5 +54,7 @@ void	rr(t_stack *stack_a, t_stack *stack_b);
 void	rra(t_stack *stack_a);
 void	rrb(t_stack *stack_b);
 void	rrr(t_stack *stack_a, t_stack *stack_b);
+
+void	selection_sort(t_stack *stack_a, t_stack *stack_b);
 
 #endif
