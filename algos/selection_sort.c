@@ -33,6 +33,7 @@ void    rotate_f(int i, void (*function)(t_stack*), t_stack *stack_a)
         i--;
     }
 }
+
 void selection_sort(t_stack *stack_a, t_stack * stack_b)
 {
     int min;
