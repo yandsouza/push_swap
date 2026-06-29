@@ -6,7 +6,7 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 16:54:53 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/29 17:16:24 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/29 17:32:02 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,13 +52,13 @@ int	main(int argc, char **argv)
 		return (0);
 	}
 	indexer(&stack_a);
-	printf("The disorder is %.2f\n", compute_disorder(&stack_a));
-	printf("Stack a:\n");
-	print_stack(&stack_a);
-	printf("-------------------\n");
-	printf("Stack b:\n");
-	print_stack(&stack_b);
-	printf("-------------------\n");
+//	printf("The disorder is %.2f\n", compute_disorder(&stack_a));
+//	printf("Stack a:\n");
+//	print_stack(&stack_a);
+//	printf("-------------------\n");
+//	printf("Stack b:\n");
+//	print_stack(&stack_b);
+//	printf("-------------------\n");
 
 //	sa(&stack_a);	
 //	pb(&stack_a, &stack_b);
@@ -72,9 +72,9 @@ int	main(int argc, char **argv)
 //	pa(&stack_a, &stack_b);
 
 	selection_sort(&stack_a, &stack_b);
-	printf("Stack a ordered:\n");
-	print_stack(&stack_a);
-	printf("-------------------\n");
+//	printf("Stack a ordered:\n");
+//	print_stack(&stack_a);
+//	printf("-------------------\n");
 //	printf("Stack b:\n");
 //	print_stack(&stack_b);
 //	printf("-------------------\n");
