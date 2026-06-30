@@ -6,12 +6,13 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 16:23:39 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/29 17:20:54 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/06/30 14:18:49 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
+# include "../libft/libft.h"
 # include <stdlib.h>
 # include <unistd.h>
 
@@ -33,6 +34,8 @@ typedef struct s_stack
 void	stack_init(t_stack *stack);
 void	push_stack(t_stack *stack, int content);
 t_node	*node_add(int content);
+
+int	parser(int argc, char **argv, t_stack *stack_a);
 
 void	indexer(t_stack *stack_one);
 int		verify_duplicate(t_stack *stack_one);

@@ -1,28 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   parser.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/17 16:54:53 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/30 14:20:26 by ynascime         ###   ########.fr       */
+/*   Created: 2026/06/30 14:11:33 by ynascime          #+#    #+#             */
+/*   Updated: 2026/06/30 14:20:23 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	main(int argc, char **argv)
+int	parser(int argc, char **argv, t_stack *stack_a)
 {
-	t_stack	stack_a;
-	t_stack	stack_b;
+	int i;
 
-	if (argc == 1)
-		return (0);
-	stack_init(&stack_a);
-	stack_init(&stack_b);
-	if (parser(argc, argv, &stack_a))
+	i = 1;
+	while (i < argc)
+	{
+		push_stack(stack_a, ft_atoi(argv[i]));
+		i++;
+	}
+	if (verify_duplicate(stack_a))
+	{
+		write(2, "Error\n", 6);
 		return (1);
-	selection_sort(&stack_a, &stack_b);
+	}
+	indexer(stack_a);
 	return (0);
 }
