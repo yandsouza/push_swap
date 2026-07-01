@@ -6,19 +6,19 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 22:27:40 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/23 15:06:14 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/07/01 13:52:36 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	push_stack(t_stack *stack, int content)
+int	push_stack(t_stack *stack, int content)
 {
 	t_node	*new;
 
 	new = node_add(content);
 	if (!new)
-		return ;
+		return (1);
 	if (stack->size == 0)
 	{
 		stack->top = new;
@@ -31,4 +31,5 @@ void	push_stack(t_stack *stack, int content)
 		stack->bottom = new;
 	}
 	stack->size++;
+	return (0);
 }

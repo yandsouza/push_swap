@@ -6,7 +6,7 @@
 #    By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/06/23 14:29:32 by ynascime          #+#    #+#              #
-#    Updated: 2026/06/30 14:17:12 by ynascime         ###   ########.fr        #
+#    Updated: 2026/07/01 13:16:46 by ynascime         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ SRCS		=	main.c \
 				stack/indexer.c \
 				stack/node_add.c \
 				stack/stack_init.c \
-				stack/push_stack.c \
+				parser/push_stack.c \
 				parser/parser.c \
 				parser/verify_duplicate.c \
 				parser/compute_disorder.c \
@@ -23,7 +23,8 @@ SRCS		=	main.c \
 				ops/push.c \
 				ops/rotate.c \
 				ops/reverse.c \
-				algos/selection_sort.c
+				algos/selection_sort.c \
+				algos/chunk_based_sort.c
 
 OBJS		= $(SRCS:%.c=%.o)
 CC			= cc

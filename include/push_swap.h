@@ -6,7 +6,7 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 16:23:39 by ynascime          #+#    #+#             */
-/*   Updated: 2026/06/30 14:18:49 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/07/01 13:14:28 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,10 @@ typedef struct s_stack
 }	t_stack;
 
 void	stack_init(t_stack *stack);
-void	push_stack(t_stack *stack, int content);
 t_node	*node_add(int content);
 
-int	parser(int argc, char **argv, t_stack *stack_a);
+int		parser(int argc, char **argv, t_stack *stack_a, int *strategy);
+int		push_stack(t_stack *stack, int content);
 
 void	indexer(t_stack *stack_one);
 int		verify_duplicate(t_stack *stack_one);
