@@ -6,7 +6,7 @@
 /*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 16:54:53 by ynascime          #+#    #+#             */
-/*   Updated: 2026/07/01 14:39:14 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/07/01 14:56:42 by ynascime         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,11 +41,11 @@ int	main(int argc, char **argv)
 	stack_init(&stack_b);
 	if (parser(argc, argv, &stack_a, &strategy))
 		return (1);
-	//selection_sort(&stack_a, &stack_b);
 	printf("The disorder is %.2f\n", compute_disorder(&stack_a));
 	printf("Stack a:\n");
 	print_stack(&stack_a);
 	printf("-------------------\n");
+	//selection_sort(&stack_a, &stack_b);
 	chunk_sort(&stack_a, &stack_b);
 	printf("Stack a ordered:\n");
 	print_stack(&stack_a);
