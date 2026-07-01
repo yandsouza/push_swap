@@ -6,7 +6,7 @@
 /*   By: luccaval <luccaval@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/01 01:15:53 by luccaval          #+#    #+#             */
-/*   Updated: 2026/07/01 01:16:18 by luccaval         ###   ########.fr       */
+/*   Updated: 2026/07/01 01:24:54 by luccaval         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -127,7 +127,9 @@ void    chunk_sort(t_stack *stack_a, t_stack *stack_b)
     int     upper_limit;
 
     ranking_index(stack_a);
-    if (stack_a->size <= 100)
+    if (stack_a->size <= 5)
+        chunk_count = 1;
+    else if (stack_a->size <= 100)
         chunk_count = 5;
     else
         chunk_count = 11;
