@@ -23,6 +23,7 @@ int	main(int argc, char **argv)
 	stack_init(&stack_b);
 	if (parser(argc, argv, &stack_a))
 		return (1);
-	selection_sort(&stack_a, &stack_b);
+	//selection_sort(&stack_a, &stack_b);
+	chunk_sort(&stack_a, &stack_b);
 	return (0);
 }

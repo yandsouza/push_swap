@@ -59,5 +59,6 @@ void	rrb(t_stack *stack_b);
 void	rrr(t_stack *stack_a, t_stack *stack_b);
 
 void	selection_sort(t_stack *stack_a, t_stack *stack_b);
+void    chunk_sort(t_stack *stack_a, t_stack *stack_b);
 
 #endif
