@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   chunk_based_sort.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: luccaval <luccaval@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/07/01 01:15:53 by luccaval          #+#    #+#             */
+/*   Updated: 2026/07/01 01:16:18 by luccaval         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 void     sort(int *array, int size)
@@ -84,6 +96,30 @@ int exists_in_chunk(t_stack *stack_a, int upper_limit)
     return 0;
 }
 
+int	max_position(t_stack *stack_b)
+{
+	t_node	*current;
+	int		max;
+	int		index;
+	int		i;
+
+	current = stack_b->top;
+	max = current->index;
+	index = 0;
+	i = 0;
+	while (current != NULL)
+	{
+		if (current->index > max)
+		{
+			max = current->index;
+			index = i;
+		}
+	i++;
+	current = current->next;
+	}
+	return (index);
+}
+
 void    chunk_sort(t_stack *stack_a, t_stack *stack_b)
 {
     int     chunk_count;
@@ -108,12 +144,19 @@ void    chunk_sort(t_stack *stack_a, t_stack *stack_b)
             upper_limit += chunk_width;
     }
     int size_b;
+    int index_max;
     
     size_b = stack_b->size - 1;
     while (stack_b->size > 0)
     {
         if (stack_b->top->index != size_b)
-            rb(stack_b);
+        {
+            index_max = max_position(stack_b);
+            if (index_max > stack_b->size/2)
+                rrb(stack_b);
+            else
+                rb(stack_b);
+        }
         else
         {
             pa(stack_a,stack_b);
