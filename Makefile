@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+         #
+#    By: luccaval <luccaval@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/06/23 14:29:32 by ynascime          #+#    #+#              #
-#    Updated: 2026/07/01 13:16:46 by ynascime         ###   ########.fr        #
+#    Updated: 2026/07/01 23:05:48 by luccaval         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,9 @@ SRCS		=	main.c \
 				ops/rotate.c \
 				ops/reverse.c \
 				algos/selection_sort.c \
-				algos/chunk_based_sort.c
+				algos/chunk_based_sort.c \
+				algos/sorting_index.c \
+				algos/binario_radix_sort.c
 
 OBJS		= $(SRCS:%.c=%.o)
 CC			= cc

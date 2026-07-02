@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ynascime <yannssouza@outlook.com>          +#+  +:+       +#+        */
+/*   By: luccaval <luccaval@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 16:23:39 by ynascime          #+#    #+#             */
-/*   Updated: 2026/07/01 13:14:28 by ynascime         ###   ########.fr       */
+/*   Updated: 2026/07/01 23:06:20 by luccaval         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,9 @@ void	rra(t_stack *stack_a);
 void	rrb(t_stack *stack_b);
 void	rrr(t_stack *stack_a, t_stack *stack_b);
 
+void    ranking_index(t_stack *stack_a);
 void	selection_sort(t_stack *stack_a, t_stack *stack_b);
 void    chunk_sort(t_stack *stack_a, t_stack *stack_b);
+void    binario_radix(t_stack *stack_a, t_stack *stack_b);
 
 #endif
